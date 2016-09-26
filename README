@@ -1,0 +1,9 @@
+It's a mini real-time os for atmega328p(arduino).
+The file structure:
+	timer.c is used to setup timer for systick.
+	usart.c is used to setup usart and printf function.
+	task.c is the most important part in the project, it provids user two 
+		functions, taskCreate for create a task and startTaskSchedul to 
+		start the kernel.
+	main.c is just a demo for user to use it. It contants two tasks that 
+		printf something.
